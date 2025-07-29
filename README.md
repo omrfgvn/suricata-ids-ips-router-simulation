@@ -27,7 +27,7 @@ In this project, Suricata is installed on a router to perform both network routi
 The following custom security rules were defined on Suricata:
 
 ```bash
-drop icmp 10.1.150.0/24 any -> $HOME_NET any (msg:"ICMP DROP - Ping blocked from specific IP block"; itype:8; sid:1000400; rev:1;)
+drop icmp X.1.Z.0/24 any -> $HOME_NET any (msg:"ICMP DROP - Ping blocked from specific IP block"; itype:8; sid:1000400; rev:1;)
 
 alert icmp any any -> any any (msg:"Ping Detected"; sid:1000001; rev:1;)
 
